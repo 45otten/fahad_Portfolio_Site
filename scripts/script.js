@@ -16,7 +16,7 @@ if(contactPg != null && homePg != null && showCasePg !=null){
             showCasePg.classList.remove("flex");
             showCasePg.classList.add("hidden");
 
-
+        }
     });
         contactMeBtn.addEventListener("click",() => {
         if(contactPg.classList.contains("hidden")){
