@@ -48,6 +48,9 @@ animationOnContacts.forEach((animationOnContacts , index)=>{
           }
         });
 }
+else{
+    console.log($`homepgBtn status : {homePgBtn} \n showCaseBtn status : {showCaseBtn} \n contactPg status : {contactPg}`);
+}
 
 let downloadResumeBtn = document.getElementById("downloadResumeBtn");
 
