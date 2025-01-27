@@ -8,6 +8,10 @@ const viewportWidth = window.innerWidth;
 let unOrderedList = document.getElementsByClassName("unOrderedList")[0];
 
 
+if(viewportWidth >= 504 && unOrderedList.classList.contains('hidden')){
+   unOrderedList.classList.remove('hidden');
+}
+
 if(contactPg != null && homePg != null && showCasePg !=null){
     homePgBtn.addEventListener("click",() => {
         if(homePg.classList.contains("hidden")){
@@ -20,8 +24,6 @@ if(contactPg != null && homePg != null && showCasePg !=null){
             if(viewportWidth <= 504){
                 unOrderedList.classList.add('hidden');
             }
-
-        }
     });
         contactMeBtn.addEventListener("click",() => {
         if(contactPg.classList.contains("hidden")){
