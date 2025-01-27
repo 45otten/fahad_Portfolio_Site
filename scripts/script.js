@@ -84,7 +84,7 @@ if(downloadResumeBtn != null){
 //WhatsApp Funtion
 
 function openWhatsApp() {
-    const phoneNumber = "923215977229";
+    const phoneNumber = "923264830371";
     const message = "Hello, I want to request a UI design.";
     const encodedMessage = encodeURIComponent(message);
 
