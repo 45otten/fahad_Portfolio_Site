@@ -17,9 +17,6 @@ if(contactPg != null && homePg != null && showCasePg !=null){
             showCasePg.classList.add("hidden");
 
 
-            if(viewportWidth <= 504){
-                unOrderedList.classList.add('hidden');
-            }
     });
         contactMeBtn.addEventListener("click",() => {
         if(contactPg.classList.contains("hidden")){
@@ -27,10 +24,6 @@ if(contactPg != null && homePg != null && showCasePg !=null){
             contactPg.classList.remove("hidden");
             showCasePg.classList.add("hidden");
             showCasePg.classList.remove("flex");
-
-            if(viewportWidth <= 504){
-                unOrderedList.classList.add('hidden');
-            }
 
 
             let animationOnContacts = document.querySelectorAll('.animationOnContacts');
@@ -52,10 +45,6 @@ animationOnContacts.forEach((animationOnContacts , index)=>{
             contactPg.classList.add("hidden");
             showCasePg.classList.remove("hidden");
             showCasePg.classList.add("flex");
-
-            if(viewportWidth <= 504){
-                unOrderedList.classList.add('hidden');
-            }
           }
         });
 }
