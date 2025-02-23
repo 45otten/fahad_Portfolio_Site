@@ -16,11 +16,6 @@ if(contactPg != null && homePg != null && showCasePg !=null){
             showCasePg.classList.remove("flex");
             showCasePg.classList.add("hidden");
 
-
-            if(viewportWidth <= 504){
-                unOrderedList.classList.add('hidden');
-            }
-
         }
     });
         contactMeBtn.addEventListener("click",() => {
@@ -29,10 +24,6 @@ if(contactPg != null && homePg != null && showCasePg !=null){
             contactPg.classList.remove("hidden");
             showCasePg.classList.add("hidden");
             showCasePg.classList.remove("flex");
-
-            if(viewportWidth <= 504){
-                unOrderedList.classList.add('hidden');
-            }
 
 
             let animationOnContacts = document.querySelectorAll('.animationOnContacts');
@@ -54,12 +45,11 @@ animationOnContacts.forEach((animationOnContacts , index)=>{
             contactPg.classList.add("hidden");
             showCasePg.classList.remove("hidden");
             showCasePg.classList.add("flex");
-
-            if(viewportWidth <= 504){
-                unOrderedList.classList.add('hidden');
-            }
           }
         });
+}
+else{
+    console.log($`homepgBtn status : {homePgBtn} \n showCaseBtn status : {showCaseBtn} \n contactPg status : {contactPg}`);
 }
 
 let downloadResumeBtn = document.getElementById("downloadResumeBtn");
@@ -82,7 +72,7 @@ if(downloadResumeBtn != null){
 //WhatsApp Funtion
 
 function openWhatsApp() {
-    const phoneNumber = "923215977229";
+    const phoneNumber = "923264830371";
     const message = "Hello, I want to request a UI design.";
     const encodedMessage = encodeURIComponent(message);
 
