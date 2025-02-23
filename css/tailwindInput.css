@@ -1,4 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;500&family=UnifrakturMaguntia&family=Teko:wght@300..700display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.clipBorders::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fbfd00;
+    border-left: 5px solid #fbfd00;
+    bottom: -45px;
+    left: -30px;
+  }
+  
+  .clipBorders::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #fbfd00;
+    border-right: 5px solid #fbfd00;
+    top: -20px;
+    right: -35px;
+  }
+  
+  .light-slide-upWards{
+    animation: 0.9s lightSlider ease-in-out forwards;
+  }
+  
+  @keyframes lightSlider {
+    0%{
+      transform: rotateY(0%);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateY(-2%);
+      opacity: 1;
+    }
+  }
+  
+  .lightSlidingAnimation-RtL{
+    animation: 1.2s SlidingAnimation-RtL ease-in-out forwards ;
+  }
+  
+  @keyframes SlidingAnimation-RtL {
+    0%{
+      transform: translateX(-2%);
+      opacity: 0;
+    }
+  
+    40%{
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .lightSlidingAnimation-TtB{
+    animation: 1s SlidingAnimation-TtB ease-in-out forwards ;
+  }
+  
+  @keyframes SlidingAnimation-TtB {
+    0%{
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateY(2%);
+      opacity: 1;
+    }
+  }
+  
+  .lightSlidingAnimation-BtT{
+    animation: 1s SlidingAnimation-BtT ease-in-out forwards ;
+  }
+  
+  @keyframes SlidingAnimation-BtT {
+    0%{
+      transform: translateY(10%);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .scaleIn{
+    animation: 1s scalingIn ease-out forwards;
+  }
+  
+  @keyframes scalingIn {
+    0%{
+      scale: 1.2;
+      /* opacity: 0; */
+    }
+  
+    100%{
+      scale: 1;
+      /* opacity: 1; */
+    }
+  }
+  
+  .fadeInEffect{
+    animation: 2s fadeInEffect ease-in-out forwards;
+  }
+  
+  @keyframes fadeInEffect {
+    0%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 1;
+    }
+  }
+  .scaleInWithShadow {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(251, 253, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .scaleInWithShadow:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(251, 253, 0, 1);
+  }
+  
+  .scrollBarForShowCase{
+    overflow-y: scroll !important;
+  }

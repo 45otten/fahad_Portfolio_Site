@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;500&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;500&family=UnifrakturMaguntia&family=Teko:wght@300..700display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -735,8 +735,16 @@ video {
   flex-direction: column;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-end{
@@ -785,10 +793,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-xl{
-  border-radius: 0.75rem;
-}
-
 .rounded-bl-xl{
   border-bottom-left-radius: 0.75rem;
 }
@@ -813,6 +817,11 @@ video {
   border-top-width: 4px;
 }
 
+.border-ChangedThemeColor{
+  --tw-border-opacity: 1;
+  border-color: rgb(201 244 34 / var(--tw-border-opacity, 1));
+}
+
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
@@ -828,9 +837,9 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
-.border-yellow-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(253 224 71 / var(--tw-border-opacity, 1));
+.bg-ChangedThemeColor{
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 244 34 / var(--tw-bg-opacity, 1));
 }
 
 .bg-FBlack{
@@ -850,11 +859,6 @@ video {
 
 .bg-transparent{
   background-color: transparent;
-}
-
-.bg-yellow-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-t{
@@ -931,12 +935,8 @@ video {
   text-align: center;
 }
 
-.font-LogoFont{
-  font-family: UnifrakturMaguntia, sans-serif;
-}
-
-.font-LogoFont1{
-  font-family: Clicker Script, sans-serif;
+.font-HeadingFonts{
+  font-family: Teko, sans-serif;
 }
 
 .font-Poppins{
@@ -1008,9 +1008,14 @@ video {
   text-transform: capitalize;
 }
 
+.text-ChangedThemeColor{
+  --tw-text-opacity: 1;
+  color: rgb(201 244 34 / var(--tw-text-opacity, 1));
+}
+
 .text-FText1{
   --tw-text-opacity: 1;
-  color: rgb(251 253 0 / var(--tw-text-opacity, 1));
+  color: rgb(201 244 34 / var(--tw-text-opacity, 1));
 }
 
 .text-black{
@@ -1021,11 +1026,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-yellow-300{
-  --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0{
@@ -1092,8 +1092,8 @@ video {
   --scrollbar-track: #222 !important;
 }
 
-.scrollbar-thumb-yellow-300{
-  --scrollbar-thumb: #fde047 !important;
+.scrollbar-thumb-ChangedThemeColor{
+  --scrollbar-thumb: #c9f422 !important;
 }
 
 .clipBorders::before{
@@ -1244,9 +1244,14 @@ video {
   border-bottom-width: 2px;
 }
 
-.hover\:border-yellow-300:hover{
+.hover\:border-ChangedThemeColor:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(253 224 71 / var(--tw-border-opacity, 1));
+  border-color: rgb(201 244 34 / var(--tw-border-opacity, 1));
+}
+
+.hover\:bg-ChangedThemeColor:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 244 34 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-FBlack:hover{
@@ -1256,12 +1261,7 @@ video {
 
 .hover\:bg-FText1:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(251 253 0 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-yellow-300:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
+  background-color: rgb(201 244 34 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:font-normal:hover{
@@ -1272,6 +1272,11 @@ video {
   font-weight: 600;
 }
 
+.hover\:text-ChangedThemeColor:hover{
+  --tw-text-opacity: 1;
+  color: rgb(201 244 34 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-FBlack:hover{
   --tw-text-opacity: 1;
   color: rgb(34 34 34 / var(--tw-text-opacity, 1));
@@ -1279,17 +1284,12 @@ video {
 
 .hover\:text-FText1:hover{
   --tw-text-opacity: 1;
-  color: rgb(251 253 0 / var(--tw-text-opacity, 1));
+  color: rgb(201 244 34 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-yellow-300:hover{
-  --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity, 1));
-}
-
-.focus\:border-yellow-300:focus{
+.focus\:border-ChangedThemeColor:focus{
   --tw-border-opacity: 1;
-  border-color: rgb(253 224 71 / var(--tw-border-opacity, 1));
+  border-color: rgb(201 244 34 / var(--tw-border-opacity, 1));
 }
 
 .focus\:outline-none:focus{
@@ -1388,8 +1388,8 @@ video {
     padding-top: 2.25rem;
   }
 
-  .max-\[1022px\]\:font-LogoFont{
-    font-family: UnifrakturMaguntia, sans-serif;
+  .max-\[1022px\]\:font-Poppins{
+    font-family: Poppins, sans-serif;
   }
 
   .max-\[1022px\]\:text-6xl{
@@ -1397,9 +1397,9 @@ video {
     line-height: 1;
   }
 
-  .max-\[1022px\]\:text-yellow-300{
+  .max-\[1022px\]\:text-ChangedThemeColor{
     --tw-text-opacity: 1;
-    color: rgb(253 224 71 / var(--tw-text-opacity, 1));
+    color: rgb(201 244 34 / var(--tw-text-opacity, 1));
   }
 }
 
@@ -1410,6 +1410,14 @@ video {
 
   .max-\[788px\]\:mt-16{
     margin-top: 4rem;
+  }
+
+  .max-\[788px\]\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .max-\[788px\]\:mt-52{
+    margin-top: 13rem;
   }
 
   .max-\[788px\]\:w-\[100\%\]{
@@ -1574,9 +1582,9 @@ video {
     text-align: center;
   }
 
-  .max-\[462px\]\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .max-\[462px\]\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .max-\[462px\]\:text-white{
@@ -1594,6 +1602,54 @@ video {
 @media (max-width: 393px){
   .max-\[393px\]\:mt-5{
     margin-top: 1.25rem;
+  }
+
+  .max-\[393px\]\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .max-\[393px\]\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .max-\[393px\]\:mt-52{
+    margin-top: 13rem;
+  }
+}
+
+@media (max-width: 381px){
+  .max-\[381px\]\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .max-\[381px\]\:mt-56{
+    margin-top: 14rem;
+  }
+}
+
+@media (max-width: 365px){
+  .max-\[365px\]\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .max-\[365px\]\:mt-64{
+    margin-top: 16rem;
+  }
+
+  .max-\[365px\]\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .max-\[365px\]\:mt-80{
+    margin-top: 20rem;
+  }
+
+  .max-\[365px\]\:mb-56{
+    margin-bottom: 14rem;
+  }
+
+  .max-\[365px\]\:hidden{
+    display: none;
   }
 }
 
